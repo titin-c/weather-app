@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { WeatherScreen } from "./components/WeatherScreen";
 import datos from "./data/datos";
 
-import '../src/App.css';
+import '../src/styles/App.css';
 
 
 function App() {

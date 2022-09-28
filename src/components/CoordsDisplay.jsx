@@ -1,5 +1,5 @@
 
-import '../coords.css';
+import '../styles/coords.css';
 //esta funcion convierte a hora local unix stamp
 import convertTimestamp from '../helpers/convertTimeStamp'
 import useToggle from '../hooks/useToggle';

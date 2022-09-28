@@ -1,6 +1,6 @@
 import React from 'react'
 import useToggle from '../hooks/useToggle';
-import '../../src/menu.css'
+import '../../src/styles/menu.css'
 export const MenuDisplay = () => {
 
     const { toggled, setToggle } = useToggle(false);

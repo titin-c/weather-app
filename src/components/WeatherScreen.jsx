@@ -18,6 +18,7 @@ export const WeatherScreen = ({ coord, timezone, city, sys, weather, main, wind,
             <div className="container">
 
                 <div className='adorno'></div>
+                {/* Calculamos si es de día o de noche con la hora actual y el anochecer o amanecer */}
                 <div className={horaActuala > sunset && horaActuala < sunrise ? `principal-display noche`  : `principal-display`}>
                     <div className="top-menu">
                         <CoordsDisplay
