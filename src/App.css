@@ -1,38 +1,198 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+body {
+  background: #4e62fe;
+  background: -moz-linear-gradient(-45deg, #4e62fe 0%, #4589e2 50%, #4e62fe 100%);
+  background: -webkit-linear-gradient(-45deg, #4e62fe 0%, #4589e2 50%, #4e62fe 100%);
+  background: linear-gradient(135deg, #4e62fe 0%, #4589e2 50%, #4e62fe 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4e62fe', endColorstr='#4e62fe', GradientType=1);
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  background-color: #011024;
+  color: #fff;
+  border-radius: 20px;
+  padding: 5px;
+  min-width: 365px;
+  position: relative;
+  font-family: 'Rubik', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.adorno {
+  position: absolute;
+  background-color: #06387e;
+  bottom: 135px;
+  height: 20px;
+  left: 10%;
+  right: 10%;
+  z-index: 0;
+  border-radius: 0 0 20px 20px;
+
+}
+
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coords-display {
+  opacity: 1;
+  position: absolute;
+
+  left: 40px;
+  top: -100%;
+  right: 40px;
+
+  border-radius: 5px 5px 20px 20px;
+
+  color: #011024;
+  -webkit-box-shadow: 0 20px 50px 0 rgba(0, 0, 255, .5);
+  box-shadow: 0 20px 50px 0 rgba(0, 0, 255, .5);
+
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+
+.principal-display {
+  background: #126ef3;
+  background: -moz-linear-gradient(45deg, #126ef3 0%, #15c3f6 100%);
+  background: -webkit-linear-gradient(45deg, #126ef3 0%, #15c3f6 100%);
+  background: linear-gradient(45deg, #126ef3 0%, #15c3f6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#126ef3', endColorstr='#15c3f6', GradientType=1);
+
+  border-radius: 15px;
+  padding: 20px;
+
+  -webkit-box-shadow: 0 20px 50px 0 rgba(0, 0, 255, .5);
+  box-shadow: 0 20px 50px 0 rgba(0, 0, 255, .5);
+
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.principal-display.noche {
+  background: #020f47;
+  background: -moz-linear-gradient(45deg, #040490 0%, #020f47 100%);
+  background: -webkit-linear-gradient(45deg, #040490 0%, #020f47 100%);
+  background: linear-gradient(45deg, #040490 0%, #020f47 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#040490', endColorstr='#020f47', GradientType=1);
+}
+
+span.material-symbols-outlined {
+  font-size: 1em;
+  opacity: .7;
+
+}
+
+.temp {
+  font-size: 6em;
+  line-height: 1em;
+  margin-top: -30px;
+}
+
+span.temp-symbol {
+  position: absolute;
+  line-height: 1.1em;
+  font-size: 0.4em;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.description {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+}
+
+.fecha {
+  font-size: 0.7em;
+  opacity: .7;
+}
+
+.temp-mix-max-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.temp-mix-max-container div {
+  display: flex;
+  align-items: center;
+}
+
+.menu-container {
+  padding: 30px 0 20px;
+}
+
+.menu {
+  display: flex;
+
+  justify-content: space-between;
+  text-align: center;
+  align-items: flex-start;
+}
+
+.menu-item {
+  flex: 1 1 0;
+}
+
+.menu-item button {
+  background-color: transparent;
+  border: solid 1px #051a36;
+  border-radius: 15px;
+  padding: 20px 0px;
+  width: 84%;
+  margin: auto;
+  cursor: pointer;
+}
+
+.menu-item button:hover {
+  background-color: #051a36;
+}
+
+.menu-item-icon {
+  font-size: 1.4em;
+  line-height: 1em;
+}
+
+.menu-item-leyenda {
+  font-size: 0.7em;
+  opacity: .7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin-top: 3px;
+}
+
+.footer {
+  text-align: center;
+  font-size: .8em;
+  margin-top: 10px;
+  color: #0423AE
+}
+
+.footer a {
+  color: #0423AE;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: #0423AE;
+  text-decoration: none;
 }
