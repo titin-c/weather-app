@@ -24,8 +24,8 @@ transition: all .5s ease;
 
 .menu-lat-display {
     position: absolute;
-    right: -250px;
-    top: 13px;
+    right: -270px;
+    top: -7px;
     width: 250px;
     z-index: 9;
 
@@ -36,7 +36,7 @@ transition: all .5s ease;
 transition: all .3s ease;
 }
 .active.menu-lat-display {
-    right: -1px;
+    right: -21px;
     
 }
 .menu-lat {
@@ -46,13 +46,14 @@ transition: all .3s ease;
     left: 0;
     right: 0;
     backdrop-filter: blur(5px);
-    height: 424px;
+    height: 403px;
 }
 .menu-lat ul {
     list-style: none;
     text-align: left;
     margin: 0;
     padding: 0;
+    font-size: 1.1em;
 }
 .menu-lat-container {
     padding: 20px;

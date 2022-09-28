@@ -9,7 +9,10 @@ export const PrincipalDisplay = ({ icon, description, temp, min, max }) => {
         <div >
             <img
                 src={`http://openweathermap.org/img/wn/${icon}@4x.png`}
-                alt={description} />
+                alt={description} 
+                className="image-icon"
+                />
+                
 
             <div className='temp'>
                 {convertKelvinCelsius(temp)}

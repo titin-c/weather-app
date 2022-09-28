@@ -37,7 +37,7 @@ button {
 .adorno {
   position: absolute;
   background-color: #06387e;
-  bottom: 135px;
+  bottom: 147px;
   height: 20px;
   left: 10%;
   right: 10%;
@@ -47,18 +47,16 @@ button {
 }
 
 .top-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
 }
 
 .coords-display {
   opacity: 1;
   position: absolute;
 
-  left: 40px;
-  top: -100%;
-  right: 40px;
+  left: 15px;
+  top: -330px;
+  right: 15px;
 
   border-radius: 5px 5px 20px 20px;
 
@@ -106,7 +104,9 @@ span.material-symbols-outlined {
   opacity: .7;
 
 }
-
+.image-icon{
+  margin-top: -5px;
+}
 .temp {
   font-size: 6em;
   line-height: 1em;
@@ -134,9 +134,9 @@ span.temp-symbol {
 
 .temp-mix-max-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;;
   margin-top: 20px;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .temp-mix-max-container div {
@@ -162,12 +162,13 @@ span.temp-symbol {
 
 .menu-item button {
   background-color: transparent;
-  border: solid 1px #051a36;
+  border: solid 1px #09264d;
   border-radius: 15px;
   padding: 20px 0px;
   width: 84%;
   margin: auto;
   cursor: pointer;
+  font-size: 1em;
 }
 
 .menu-item button:hover {
