@@ -5,6 +5,10 @@
     background: transparent;
     border: none;
     font-size: 1em;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+
 }
 
 .ppal-city-name {

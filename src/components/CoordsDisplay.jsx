@@ -22,7 +22,7 @@ export const CoordsDisplay = ({ lon, lat, timezone, city, country, sunrise, suns
             </button>
             <div className={toggled ? "coords-display active" : "coords-display"}>
                 <div className='coords-header'>
-                    <span><span class="material-symbols-outlined">language</span> {city}, {country} - UTC + {timeZone}</span> 
+                    <span><span className="material-symbols-outlined">language</span> {city}, {country} - UTC + {timeZone}</span> 
                     <button
                     onClick={() => setToggle(!toggled)}
                     >x</button>

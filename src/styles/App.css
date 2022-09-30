@@ -47,7 +47,12 @@ button {
 }
 
 .top-menu {
-  position: relative;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  
+  z-index: 1;
 }
 
 .coords-display {
@@ -71,8 +76,10 @@ button {
   transition: all .3s ease;
 }
 
+.carousel {
+  width: 305px;
+  overflow: hidden;
 
-.principal-display {
   background: #126ef3;
   background: -moz-linear-gradient(45deg, #126ef3 0%, #15c3f6 100%);
   background: -webkit-linear-gradient(45deg, #126ef3 0%, #15c3f6 100%);
@@ -86,12 +93,28 @@ button {
   box-shadow: 0 20px 50px 0 rgba(0, 0, 255, .5);
 
   text-align: center;
+}
+.inner {
+  display: flex;
+  -webkit-transition: all .3s ease;
+-moz-transition: all .3s ease;
+-ms-transition: all .3s ease;
+-o-transition: all .3s ease;
+transition: all .3s ease;
+}
+
+.carousel-item > div {
+  width: 305px;
+}
+
+.principal-display {
+  
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
 
-.principal-display.noche {
+.principal-display.noche .carousel{
   background: #020f47;
   background: -moz-linear-gradient(45deg, #040490 0%, #020f47 100%);
   background: -webkit-linear-gradient(45deg, #040490 0%, #020f47 100%);
@@ -106,6 +129,15 @@ span.material-symbols-outlined {
 }
 .image-icon{
   margin-top: -5px;
+}
+.icono-grande {
+  font-size: 7em !important;
+  height: 195px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 .temp {
   font-size: 6em;
@@ -143,6 +175,14 @@ span.temp-symbol {
   display: flex;
   align-items: center;
 }
+span.symbol-leyenda {
+  font-size: 0.6em;
+  opacity: .7;
+  line-height: 12px;
+}
+span.dato {
+  margin: 0 5px;
+}
 
 .menu-container {
   padding: 30px 0 20px;
@@ -150,10 +190,12 @@ span.temp-symbol {
 
 .menu {
   display: flex;
-
   justify-content: space-between;
   text-align: center;
   align-items: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menu-item {

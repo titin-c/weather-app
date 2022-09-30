@@ -3,8 +3,8 @@ button.btn-menu-lat {
     border: none;
     font-size: 2em;
     position: absolute;
-    top: 0;
-    left: -60px;
+    top: 10px;
+    left: -76px;
     z-index: 9;
     -webkit-transition: all .5s ease;
 -moz-transition: all .5s ease;
@@ -25,7 +25,8 @@ transition: all .5s ease;
 .menu-lat-display {
     position: absolute;
     right: -270px;
-    top: -7px;
+    top: 0px;
+    height: 390px;
     width: 250px;
     z-index: 9;
 
@@ -41,12 +42,12 @@ transition: all .3s ease;
 }
 .menu-lat {
     position: absolute;
-    top: -13px;
+    top: 0px;
+    bottom: 0;
     background: #0110249e;
     left: 0;
     right: 0;
     backdrop-filter: blur(5px);
-    height: 403px;
 }
 .menu-lat ul {
     list-style: none;

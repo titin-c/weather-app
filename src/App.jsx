@@ -17,16 +17,19 @@ function App() {
     setLoading(true);
     const fetchData = async ()=>{
       var datos = await fetch(apiUrl).then(res => {
+        
         return res.json();
       });
-      //console.log(data);
+      
       
       setData(datos);
+      
       setLoading(false);
     }
     fetchData();
+    
   }, []);
-
+  console.log(data);
   return (
 <>
 {!loading  ?  <WeatherScreen 
@@ -42,6 +45,7 @@ function App() {
                   sun
 
                   clouds={data.clouds}
+                  visibility={data.visibility}
                /> 
                : ("Cargando...") }
 
