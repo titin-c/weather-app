@@ -6,8 +6,8 @@ export const MenuDisplay = () => {
     const { toggled, setToggle } = useToggle(false);
 
     return (
-        <div className={toggled ? "menu-lat-display active" : "menu-lat-display"}>
-            <button
+        <div className={toggled ? "menu-lat-cont active" : "menu-lat-cont"}>
+        <button
                 className='btn-menu-lat'
                 onClick={() => setToggle(!toggled)}
             >
@@ -18,38 +18,41 @@ export const MenuDisplay = () => {
                     close
                 </span>
                 </button>
-                <div className='menu-lat'>
-<div className='menu-lat-container'>
-    <div className='menu-lat-header'>
-        menú principal
-    </div>
-    <div>
-        <ul>
-            <li><span className="material-symbols-outlined">arrow_right_alt</span> Opción uno</li>
-            <li><span className="material-symbols-outlined">arrow_right_alt</span> Opción tres</li>
-            <li><span className="material-symbols-outlined">arrow_right_alt</span> Opción 4</li>
-            <li><span className="material-symbols-outlined">arrow_right_alt</span> Opción cinco</li>
-            <li><span className="material-symbols-outlined">arrow_right_alt</span> Opción seis</li>
-            <li><span className="material-symbols-outlined">arrow_right_alt</span> Opción VII</li>
-            </ul>
-    </div>
-    <div className='menu-lat-footer'>
-    <span className="material-symbols-outlined">
-history
-</span>
-<span className="material-symbols-outlined">
-timeline
-</span>
-<span className="material-symbols-outlined">
-circle_notifications
-</span>
-<span className="material-symbols-outlined">
-settings
-</span>
-    </div>
-</div>
+        <div className="menu-lat-display">
+
+            <div className='menu-lat'>
+                <div className='menu-lat-container'>
+                    <div className='menu-lat-header'>
+                        menú principal
+                    </div>
+                    <div>
+                        <ul>
+                            <li><span className="material-symbols-outlined">arrow_right_alt</span> Opción uno</li>
+                            <li><span className="material-symbols-outlined">arrow_right_alt</span> Opción tres</li>
+                            <li><span className="material-symbols-outlined">arrow_right_alt</span> Opción 4</li>
+                            <li><span className="material-symbols-outlined">arrow_right_alt</span> Opción cinco</li>
+                            <li><span className="material-symbols-outlined">arrow_right_alt</span> Opción seis</li>
+                            <li><span className="material-symbols-outlined">arrow_right_alt</span> Opción VII</li>
+                        </ul>
+                    </div>
+                    <div className='menu-lat-footer'>
+                        <span className="material-symbols-outlined">
+                            history
+                        </span>
+                        <span className="material-symbols-outlined">
+                            timeline
+                        </span>
+                        <span className="material-symbols-outlined">
+                            circle_notifications
+                        </span>
+                        <span className="material-symbols-outlined">
+                            settings
+                        </span>
+                    </div>
                 </div>
-            
+            </div>
+
+        </div>
         </div>
     )
 }
