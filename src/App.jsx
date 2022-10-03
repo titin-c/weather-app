@@ -29,7 +29,6 @@ function App() {
     fetchData();
     
   }, []);
-  console.log(data);
   return (
 <>
 {!loading  ?  <WeatherScreen 

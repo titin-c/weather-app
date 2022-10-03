@@ -9,7 +9,7 @@ const datos =
             "id": 0,
             "main": " ",
             "description": " ",
-            "icon": " "
+            "icon": "02d"
         }
     ],
     "base": "stations",
