@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
-
+*{box-sizing: border-box;}
 body {
   background: #4e62fe;
   background: -moz-linear-gradient(-45deg, #4e62fe 0%, #4589e2 50%, #4e62fe 100%);
@@ -77,7 +77,7 @@ button {
 }
 
 .carousel {
-  width: 305px;
+  width: 335px;
   overflow: hidden;
 
   background: #126ef3;
@@ -104,7 +104,7 @@ transition: all .3s ease;
 }
 
 .carousel-item > div {
-  width: 305px;
+  width: 295px;
 }
 
 .principal-display {
@@ -197,7 +197,23 @@ span.dato {
   margin: 0;
   padding: 0;
 }
+.marker {
+  width: 70px;
+  height: 100px;
+  position: absolute;
+  background: #1382f4;
+  bottom: 20px;
+  border-radius: 15px;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  z-index: -1;
+  transition: all .3s ease;
 
+  -webkit-box-shadow: 0 0 10px 0 #1382f48f;
+box-shadow: 0 0 10px 0 #1382f48f;
+}
 .menu-item {
   flex: 1 1 0;
 }
@@ -214,7 +230,7 @@ span.dato {
 }
 
 .menu-item button:hover {
-  background-color: #051a36;
+  border-color: #123b71;
 }
 
 .menu-item-icon {
@@ -223,7 +239,7 @@ span.dato {
 }
 
 .menu-item-leyenda {
-  font-size: 0.7em;
+  font-size: 0.6em;
   opacity: .7;
   text-transform: uppercase;
   letter-spacing: 1px;

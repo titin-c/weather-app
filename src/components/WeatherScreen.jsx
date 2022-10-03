@@ -84,7 +84,7 @@ export const WeatherScreen = ({ coord, timezone, city, sys, weather, main, wind,
                         </div>
                         <div
                             className="marker"
-                            style={{ left: `calc(${100 / 4 * activeIndex}% + 15px)` }}
+                            style={{ left: `calc(${100 / 4 * activeIndex}% + 7px)` }}
                         >
                         </div>
                         <div className="menu-container">
@@ -149,7 +149,9 @@ export const WeatherScreen = ({ coord, timezone, city, sys, weather, main, wind,
 
                 </div>
             </div>
-            <div className="footer">Realizado por <a href="https://titin-c.github.io/curriculum/"> Titín Colomer</a></div>
+            <div className="footer">Realizado por <a href="https://titin-c.github.io/curriculum/" target="_blanc"> Titín Colomer</a>
+            <br></br>
+            with API  <a href="https://openweathermap.org/" target="_blanc">Open Weather Map</a></div>
         </div>
     )
 }
